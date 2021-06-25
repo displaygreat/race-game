@@ -125,6 +125,20 @@ table {
 .hide {
   display: none;
 }
+.start {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px 20px;
+  background-color: #e42938;
+  color: #fff;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 3px;
+  z-index: 100;
+}
 .car,
 .enemy {
   width: 50px;
@@ -148,4 +162,14 @@ table {
   height: 50px;
   background: #fff;
   left: 145px;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /*IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }

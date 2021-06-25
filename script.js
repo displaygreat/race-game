@@ -1,8 +1,17 @@
 const score = document.querySelector(".score");
 const start = document.querySelector(".start");
 const gameArea = document.querySelector(".game-area");
+
 const car = document.createElement("div");
 car.classList.add("car");
+
+const MAX_ENEMY = 7;
+
+// const music = document.createElement("embed");
+// music.src = "./audio.mp3";
+// music.classList.add(".visually-hidden");
+
+const music = new Audio("audio.mp3");
 
 start.addEventListener("click", startGame);
 document.addEventListener("keydown", startRun);
@@ -26,7 +35,17 @@ function getQuantityElements(heightElement) {
   return document.documentElement.clientHeight / heightElement + 1;
 }
 
+function getRandomEnemy(max) {
+  return Math.floor(Math.random() * max + 1);
+}
+
 function startGame() {
+  // document.body.append(music);
+  // setTimeout(() => {
+  //   music.remove();
+  // }, 100000);
+  music.play();
+
   start.classList.add("hide");
 
   for (let i = 0; i < getQuantityElements(100); i++) {
@@ -44,8 +63,11 @@ function startGame() {
     enemy.style.left =
       Math.floor(Math.random() * (gameArea.offsetWidth - 50)) + "px";
     enemy.style.top = enemy.y + "px";
-    enemy.style.background =
-      'transparent url("./image/enemy2.png") center / cover no-repeat';
+    enemy.style.background = `
+      transparent
+      url(./image/enemy${getRandomEnemy(MAX_ENEMY)}.png)
+      center / cover
+      no-repeat`;
     gameArea.appendChild(enemy);
   }
   setting.start = true;
@@ -82,19 +104,22 @@ function playGame() {
 }
 
 function startRun(event) {
-  event.preventDefault();
-  keys[event.key] = true;
+  if (keys.hasOwnProperty(event.key)) {
+    event.preventDefault();
+    keys[event.key] = true;
+  }
 }
 
 function stopRun(event) {
-  event.preventDefault();
-  keys[event.key] = false;
+  if (keys.hasOwnProperty(event.key)) {
+    event.preventDefault();
+    keys[event.key] = false;
+  }
 }
 
 function moveRoad() {
   let lines = document.querySelectorAll(".line");
   lines.forEach(function (line) {
-    console.log(line);
     line.y += setting.speed;
     line.style.top = line.y + "px";
     if (line.y >= document.documentElement.clientHeight) {
