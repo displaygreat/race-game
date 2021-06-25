@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 html,
 body,
 div,
@@ -133,11 +134,12 @@ table {
   padding: 10px 20px;
   background-color: #e42938;
   color: #fff;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Bangers", cursive;
   font-size: 1.2rem;
   border: none;
   border-radius: 3px;
   z-index: 100;
+  cursor: pointer;
 }
 .car,
 .enemy {
@@ -172,4 +174,17 @@ table {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+.score {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #494848;
+  padding: 1rem 0;
+  z-index: 100;
+  font-size: 1.2rem;
+  color: skyblue;
+  text-align: center;
+  font-family: "Bangers", cursive;
+  font-size: 1.2rem;
 }
