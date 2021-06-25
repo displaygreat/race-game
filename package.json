@@ -1,0 +1,25 @@
+{
+  "name": "races",
+  "version": "1.0.0",
+  "description": "Car Races - game built with Vanilla JS.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/displaygreat/race-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/displaygreat/race-game/issues"
+  },
+  "homepage": "https://github.com/displaygreat/race-game#readme",
+  "devDependencies": {
+    "electron": "^13.1.4",
+    "electron-packager": "^15.2.0",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  }
+}

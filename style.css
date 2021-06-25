@@ -103,6 +103,9 @@ section {
 }
 body {
   line-height: 1;
+  background-image: url(./image/smoke-orange.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 ol,
 ul {
@@ -132,7 +135,7 @@ table {
   left: 50%;
   transform: translate(-50%);
   padding: 10px 20px;
-  background-color: #e42938;
+  background-color: #d17900;
   color: #fff;
   font-family: "Bangers", cursive;
   font-size: 1.2rem;
@@ -179,7 +182,7 @@ table {
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: #494848;
+  background-color: #b22301;
   padding: 1rem 0;
   z-index: 100;
   font-size: 1.2rem;
