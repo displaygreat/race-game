@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+:root {
+  --height-elem: 100px;
+}
+
 html,
 body,
 div,
@@ -129,25 +134,49 @@ table {
 .hide {
   display: none;
 }
+.game {
+  height: 100%;
+  display: flex;
+}
 .start {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translate(-50%);
-  padding: 10px 20px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: 0px 2px 2px #d17900;
   background-color: #d17900;
   color: #fff;
   font-family: "Bangers", cursive;
   font-size: 1.2rem;
+  z-index: 100;
+}
+.btn {
   border: none;
   border-radius: 3px;
-  z-index: 100;
+  background-color: #b2d100;
+  box-shadow: 1px 1px 2px 2px #b2d100;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Bangers", cursive;
+  margin-right: 30px;
+  padding: 5px 20px;
   cursor: pointer;
+}
+.btn:last-child {
+  margin-right: 0;
+}
+.btn:disabled {
+  background-color: #eee;
+  box-shadow: 1px 1px 2px 2px #eee;
 }
 .car,
 .enemy {
-  width: 50px;
-  height: 100px;
+  width: calc(var(--height-elem) / 2);
+  height: var(--height-elem);
   background: transparent url("./image/player.png") center / cover no-repeat;
   position: absolute;
   left: 125px;
@@ -155,7 +184,6 @@ table {
 }
 .game-area {
   width: 300px;
-  height: 100%;
   position: relative;
   margin: auto;
   background: #222;
@@ -164,7 +192,7 @@ table {
 .line {
   position: absolute;
   width: 10px;
-  height: 50px;
+  height: calc(var(--height-elem) / 2);
   background: #fff;
   left: 145px;
 }
@@ -179,15 +207,17 @@ table {
   overflow: hidden;
 }
 .score {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
   background-color: #b22301;
-  padding: 1rem 0;
-  z-index: 100;
+  box-shadow: 1px 1px 2px 2px #b22301;
+  padding: 0.6rem 0;
   font-size: 1.2rem;
-  color: skyblue;
+  color: #fff;
   text-align: center;
   font-family: "Bangers", cursive;
   font-size: 1.2rem;
+  z-index: 200;
 }
