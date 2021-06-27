@@ -1,25 +1,77 @@
 {
-  "name": "races",
+  "name": "race-game",
   "version": "1.0.0",
   "description": "Car Races - game built with Vanilla JS.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "author": {
+    "name": "Oxana Shvartsman",
+    "email": "oxanashva@gmail.com"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/displaygreat/race-game.git"
   },
-  "author": "",
   "license": "ISC",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "race-game"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ],
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "displaygreat",
+              "name": "race-game",
+              "draft": true
+            }
+          }
+        }
+      ]
+    }
+  },
   "bugs": {
     "url": "https://github.com/displaygreat/race-game/issues"
   },
   "homepage": "https://github.com/displaygreat/race-game#readme",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
   "devDependencies": {
-    "electron": "^13.1.4",
-    "electron-packager": "^15.2.0",
-    "path": "^0.12.7",
-    "url": "^0.11.0"
+    "@electron-forge/cli": "^6.0.0-beta.54",
+    "@electron-forge/maker-deb": "^6.0.0-beta.54",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.54",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+    "@electron-forge/maker-zip": "^6.0.0-beta.54",
+    "@electron-forge/publisher-github": "^6.0.0-beta.54",
+    "electron": "^13.1.4"
   }
 }
