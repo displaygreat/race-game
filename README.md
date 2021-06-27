@@ -10,6 +10,8 @@ Used:
 
 ![GitHub Release Date](https://img.shields.io/github/release-date/displaygreat/race-game)
 
+[![js-standard-style](https://img.shields.io/badge/code%20build-passing-brightgreen.svg?style=flat)]
+
 ![PowerShell Gallery](https://img.shields.io/powershellgallery/p/DNS.1.1.1.1)
 
 Technologies:
