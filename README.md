@@ -1,37 +1,33 @@
 # race-game
 
-Car Races - game built with Vanilla JS.
+![PowerShell Gallery](https://img.shields.io/powershellgallery/p/DNS.1.1.1.1)
 
-This application based on [DATA GOV API](https://data.gov.il/dataset/private-and-commercial-vehicles/resource/053cea08-09bc-40ec-8f7a-156f0677aff3?view_id=6e5c660c-9103-4297-a6f6-33824258da50).
+![js-standard-style](https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat)
+
+![GitHub Release Date](https://img.shields.io/github/release-date/displaygreat/race-game)
+
+Car Races - cross-platform desktop app. Game built using HTML, CSS, JS and Electron. Published on GitHub.
 
 Used: 
 - requestAnimationFrame
 - local storage
-
-![GitHub Release Date](https://img.shields.io/github/release-date/displaygreat/race-game)
-
-![js-standard-style](https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat)
-
-![PowerShell Gallery](https://img.shields.io/powershellgallery/p/DNS.1.1.1.1)
+- GitHUb Actions
+- electron-forge
 
 Technologies:
+- HTML-CSS-JS
+- Electron
 
-![React](https://img.shields.io/badge/React-informational) ![SPA](https://img.shields.io/badge/SPA-informational) ![REST API](https://img.shields.io/badge/RESTfullAPI-informational) ![Axios](https://img.shields.io/badge/Axios-informational) ![SaaS](https://img.shields.io/badge/SaaS-informational) 
-
-Demo: https://displaygreat.github.io/my-skoda/
+Demo: https://displaygreat.github.io/race-game/
 
 [![Race Game](https://github.com/displaygreat/displaygreat/blob/main/race-game.gif)](https://youtu.be/fkEvvOOho-g)
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
 `npm install`
 
+`npm run make`
+
 `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-
-
+Or open [http://localhost:5500](http://localhost:5500) to view it in the browser.
