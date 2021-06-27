@@ -1,8 +1,10 @@
 # race-game
 
-![PowerShell Gallery](https://img.shields.io/powershellgallery/p/DNS.1.1.1.1) ![js-standard-style](https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat) ![GitHub Release Date](https://img.shields.io/github/release-date/displaygreat/race-game)
+![PowerShell Gallery](https://img.shields.io/powershellgallery/p/DNS.1.1.1.1)   ![js-standard-style](https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat)   ![GitHub Release Date](https://img.shields.io/github/release-date/displaygreat/race-game)
 
-Car Races - cross-platform desktop app. Game built using HTML, CSS, JS and Electron. Published on GitHub.
+Car Races - cross-platform desktop app.
+Game built using HTML, CSS, JS and Electron. 
+Published on GitHub.
 
 ## Tech Stack
 
@@ -24,10 +26,10 @@ https://displaygreat.github.io/race-game/
 
 ## Usage
 
-Check [release](https://github.com/displaygreat/race-game/releases/tag/v1.0.0). The packaged application for all platforms attached.
+1. Check [release](https://github.com/displaygreat/race-game/releases/tag/v1.0.0). The packaged application for all platforms attached.
 
 
-In the project directory, you can run:
+2. In the project directory, you can run:
 
 `npm install`
 
@@ -36,4 +38,4 @@ In the project directory, you can run:
 `npm start`
 
 
-Or open [http://localhost:5500](http://localhost:5500) to view it in the browser.
+3. Or open [http://localhost:5500](http://localhost:5500) to view it in the browser.
