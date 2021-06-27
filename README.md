@@ -1,4 +1,4 @@
-# race-game
+# Race Game
 
 ![PowerShell Gallery](https://img.shields.io/powershellgallery/p/DNS.1.1.1.1)&nbsp;&nbsp;&nbsp;![js-standard-style](https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat)&nbsp;&nbsp;&nbsp;![GitHub Release Date](https://img.shields.io/github/release-date/displaygreat/race-game)
 
