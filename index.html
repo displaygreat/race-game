@@ -2,16 +2,23 @@
 
 <head>
   <title>Need for JS</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="score hide"></div>
+  <div class="score hide">
+    <div class="score-wrap">
+      <span class="record-score"></span>
+      <span class="current-score"></span>
+    </div>
+  </div>
+
   <div class="game">
-    <button class="start">Start the game</button>
-    <!-- <button class="start">Easy</button>
-    <button class="start">Middle</button>
-    <button class="start">Hard</button> -->
+    <div class="start">
+      <button class="btn" data-level="1">Easy</button>
+      <button class="btn" data-level="2">Middle</button>
+      <button class="btn" data-level="3">Hard</button>
+    </div>
     <div class="game-area"></div>
   </div>
   <script src="script.js"></script>
