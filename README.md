@@ -10,6 +10,8 @@ Used:
 
 ![GitHub Release Date](https://img.shields.io/github/release-date/displaygreat/race-game)
 
+![PowerShell Gallery](https://img.shields.io/powershellgallery/p/DNS.1.1.1.1)
+
 Technologies:
 
 ![React](https://img.shields.io/badge/React-informational) ![SPA](https://img.shields.io/badge/SPA-informational) ![REST API](https://img.shields.io/badge/RESTfullAPI-informational) ![Axios](https://img.shields.io/badge/Axios-informational) ![SaaS](https://img.shields.io/badge/SaaS-informational) 
