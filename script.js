@@ -65,7 +65,6 @@ function changeLevel(level) {
 function startGame(event) {
   if (!event.target.classList.contains("btn")) return;
   btns.forEach((btn) => (btn.disabled = true));
-
   gameArea.style.minHeight =
     Math.floor(
       (document.documentElement.clientHeight - HEIGHT_ELEM) / HEIGHT_ELEM
