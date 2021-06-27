@@ -33,11 +33,11 @@ https://displaygreat.github.io/race-game/
 
 2. In the project directory, you can run:
 
-- `npm install`
+   - `npm install`
 
-- `npm run make`
+   - `npm run make`
 
-- `npm start`
+   - `npm start`
 
 
 3. Or open [http://localhost:5500](http://localhost:5500) to view it in the browser.
