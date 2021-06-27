@@ -20,7 +20,7 @@ Technologies:
 
 Demo: https://displaygreat.github.io/my-skoda/
 
-[![mySkoda-SPA-React](https://github.com/displaygreat/displaygreat/blob/main/my-skoda-react.gif)](https://youtu.be/-vzt7G5zS94)
+[![Race Game](https://github.com/displaygreat/displaygreat/blob/main/race-game.gif)](https://youtu.be/fkEvvOOho-g)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
